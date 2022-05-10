@@ -27,10 +27,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatMenuModule } from '@angular/material/menu';
-import { NgbdCarouselPause } from './carousel-pause/carousel-pause';
+//carousel
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, CarouselComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -55,7 +56,6 @@ import { NgbdCarouselPause } from './carousel-pause/carousel-pause';
     MatNativeDateModule,
     MatMenuModule,
     NgbModule,
-    NgbdCarouselPause,
   ],
   providers: [MatDatepickerModule],
   bootstrap: [AppComponent],
